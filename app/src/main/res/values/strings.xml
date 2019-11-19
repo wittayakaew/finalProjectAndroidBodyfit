@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name"> </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bmi_button">BMI</string>
+    <string name="fat_cal_button">Fat Calculator</string>
+    <string name="calories_button">Calories Calculator</string>
+    <string name="bmi_h_edit">Height</string>
+    <string name="bmi_w_edit">Wight</string>
+    <string name="bmi_result_text">Result</string>
+    <string name="bmi_back_button">BACK</string>
+    <string name="bmi_calculator_button">OK</string>
+    <string name="fat_back_button">BACK</string>
+    <string name="fat_cal_buton">OK</string>
+    <string name="calories_cal_button">OK</string>
+    <string name="calories_back_button">BACK</string>
+    <string name="weight_hint">Weight</string>
+    <string name="hight_hint">Hight</string>
+    <string name="age_hint">Age</string>
+    <string name="heart_rate_hint">Heart Rate</string>
+    <string name="about_description">Body Fit เป็นแอพพลิเคชั่นที่เกี่ยวกับการคำนวนสัดส่วนระบบความสมดุลของร่างกาย
+        ไม่ว่าจะเป็นการคำนวน BMI BMR หรือแม้แต่การคำนวนหา ค่าที่เหมาะสมที่สุดในเต้นของหัวใจในการออกกำลังกาย ที่จะเผาผลาญใขมันได้ดีที่สุด
+    </string>
+    <string name="bmi_tutorial">
+        BMI กรอกข้อมูลน้ำหนักส ่วนสูง จากนั้นกด ok ระบบจะทำการคำนวน BMI ให้กับคุณแบบอัตโนมัติ
+    </string>
+    <string name="bmr_tutorial">
+        BMR กรอกข้อมูลน้ำหนักส ่วนสูง อายุ และเพศ เพื่อหาจำนวนแคลอรี่ที่ร่างกายต้องการขั้นต่ำต่อวัน โดยไม่คิดในมุมของการออกกำลังกาย จากนั้นกด ok ระบบจะทำการคำนวน BMI ให้กับคุณแบบอัตโนมัติ
+    </string>
+    <string name="fat_tutorial">
+        Fat calculator กรอกอายุ และ ชีพจรขณะร่างกายพัก เพื่อคำนวนหาชีพจรที่ดีที่สุดในการออกกำลังกายเพื่อลดใขมัน จากนั้นกด ok ระบบจะทำการคำนวน BMI ให้กับคุณแบบอัตโนมัติ
+    </string>
+    <string name="about_fragment">About</string>
+    <string name="share_item" />
+    <string name="share_success_text">My %1$s is %2$s!! From Bodyfit App</string>
+
+</resources>

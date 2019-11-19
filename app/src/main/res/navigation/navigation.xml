@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_bmiFragment"
+            app:destination="@id/bmiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fatCalculatorFragment"
+            app:destination="@id/fatCalculatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_caloriesFragment"
+            app:destination="@id/caloriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bmiFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.bmi.BmiFragment"
+        android:label="BmiFragment"
+        tools:layout="@layout/fragment_bmi">
+        <action
+            android:id="@+id/action_bmiFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_bmiFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fatCalculatorFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.fatcalculator.FatCalculatorFragment"
+        android:label="fragment_fat_calculator"
+        tools:layout="@layout/fragment_fat_calculator" >
+        <action
+            android:id="@+id/action_fatCalculatorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_fatCalculatorFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.caloriescal.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories" >
+        <action
+            android:id="@+id/action_caloriesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_caloriesFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.result.ResultFragment"
+        android:label="ResultFragment" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+</navigation>
